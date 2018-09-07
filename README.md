@@ -1,5 +1,7 @@
 # OpenRecy
 
+![modulo partes principales](https://user-images.githubusercontent.com/732609/45230758-495ad080-b2a0-11e8-9006-b90b9770b76c.png)
+
 
 
 Modulo de reconocimiento de envases descartables basado en Arduino, python y openCV.
