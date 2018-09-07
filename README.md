@@ -18,4 +18,6 @@ Todas las partes del modulo fueron diseñadas para ser cortadas con router cnc, 
 
 Los objetivos mas importantes son que se pueda fabricar con partes economicas y faciles de conseguir, otra meta importante es que sea de bajo consumo energetico, y de un tamaño reducido. 
 
-https://www.texolab.net
+Este modulo es el que usamos para la construcion de nuestra maquina de venta en reversa
+
+https://texolab.net/2018/07/21/maquina-de-venta-en-reversa-de-envases-plasticos/
