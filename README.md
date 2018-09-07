@@ -1,5 +1,7 @@
 # OpenRecy
 
+
+
 Modulo de reconocimiento de envases descartables basado en Arduino, python y openCV.
 
 Este modulo es capaz de leer los codigos de barra en los envases y seprar estos por color o por tipo, por medio de una camara y openCV. 
@@ -14,3 +16,4 @@ Todas las partes del modulo fueron diseñadas para ser cortadas con router cnc, 
 
 Los objetivos mas importantes son que se pueda fabricar con partes economicas y faciles de conseguir, otra meta importante es que sea de bajo consumo energetico, y de un tamaño reducido. 
 
+https://www.texolab.net
