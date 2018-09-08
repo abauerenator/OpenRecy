@@ -71,12 +71,7 @@ void setup(){
 
 void loop(){
   
-  /*
-  //Serial.println(contador, DEC);
-  estadoBoton = digitalRead(BOTONF);
-  if(estadoBoton != estadoBotonAnt){ if(estadoBoton == LOW){Serial.print("BF1\n");}delay(50);}
-  estadoBotonAnt=estadoBoton;
- */
+  
   pOk = pesar();
   if(pOk != pokAnt){ if(pOk == 1){Serial.print("pok\n");} if(pOk == 0){Serial.print("pno\n"); contador = 0;}}
   pokAnt=pOk;
@@ -98,7 +93,7 @@ void loop(){
   
   
    if (data.length() >0) {
-      Serial.println(data); //see what was received
+      Serial.println(data); 
       if(data == "fl"){fadeleds(5);}
       if(data == "av"){colores('g');
                        verde();
@@ -312,38 +307,7 @@ void fadeleds(int c){
   delayMicroseconds(50);
  } 
  
- /*
- for(int ledsBrillo = 0; ledsBrillo <= 255; ledsBrillo++){
- analogWrite(LEDG, ledsBrillo);
- delayMicroseconds(50);
- }
-
- for(int ledsBrillo = 255; ledsBrillo >= 0; ledsBrillo--){
-  analogWrite(LEDG, ledsBrillo);
-  delayMicroseconds(50);
- } 
  
-  
- for(int ledsBrillo = 0; ledsBrillo <= 255; ledsBrillo++){
- analogWrite(LEDR, ledsBrillo);
- delayMicroseconds(50);
- }
-
- for(int ledsBrillo = 255; ledsBrillo >= 0; ledsBrillo--){
-  analogWrite(LEDR, ledsBrillo);
-  delayMicroseconds(50);
- } 
- 
- 
- for(int ledsBrillo = 0; ledsBrillo <= 255; ledsBrillo++){
- analogWrite(LEDB, ledsBrillo);
- delayMicroseconds(50);
- }
-
- for(int ledsBrillo = 255; ledsBrillo >= 0; ledsBrillo--){
-  analogWrite(LEDB, ledsBrillo);
-  delayMicroseconds(50);
- } */
  c--;
   }
   
