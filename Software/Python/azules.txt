@@ -1,3 +1,6 @@
+en este archivo se cargan los codigos de barras para las botellas azules
+uno por linea.
+
 7791813410225pepsi250ml
 
 
