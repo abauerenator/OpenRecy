@@ -64,7 +64,7 @@ void setup(){
  analogWrite(LEDG, 0);
  analogWrite(LEDB, 0);
  servo1.write(100);
- servo2.write(90); 
+ servo2.write(85); 
   digitalWrite(SALIDA, LOW);
 }
 
@@ -169,17 +169,17 @@ void loop(){
 
 void verde(){
  servo1.write(100);
- servo2.write(55); 
+ servo2.write(45); 
 }
 
 void transparente(){
  servo1.write(100);
- servo2.write(90); 
+ servo2.write(85); 
 }
 
 
 void azul(){
- servo1.write(130);
+ servo1.write(140);
  servo2.write(90); 
 }
 
@@ -255,7 +255,7 @@ void aceptarBotella(){
  analogWrite(MOTORENABLE, 255);
  digitalWrite(MOTOR2A, LOW);
  digitalWrite(MOTOR2B, HIGH);
- delay(1200);
+ delay(1600);
  
  digitalWrite(MOTOR2A, LOW);
  digitalWrite(MOTOR2B, LOW);
@@ -284,7 +284,7 @@ int pesar(){
   peso = scale.get_units();
   //Serial.print(peso);
   //Serial.println();
-  if(peso >= 15 && peso <= 30){ delayMicroseconds(50); peso = scale.get_units(); if(peso >= 15 && peso <= 30){ pok=1; fadeleds(6); moverBotella();}}else
+  if(peso >= 10 && peso <= 30){ delayMicroseconds(50); peso = scale.get_units(); if(peso >= 10 && peso <= 30){ pok=1; fadeleds(6); moverBotella();}}else
   if(peso > 32 ){pok = 0; analogWrite(LEDR, 0); analogWrite(LEDG, 255); analogWrite(LEDB, 255);}
   
   else{analogWrite(LEDR, 255); analogWrite(LEDG, 255); analogWrite(LEDB, 255);pok = 0;}
