@@ -43,7 +43,7 @@ th2 = imutils.resize(th2,600)
 cv2.imshow("video", th2)
 
 contadorpantallas = 0
-frequencia = 2000
+frecuencia = 2000
 duracion = 100
 
 data = ""
@@ -95,7 +95,7 @@ def decodificar():
             for line in buscarAzules:
                 if data in line:
                     print("azul")
-                    Beep(frequencia, duracion)
+                    Beep(frecuencia, duracion)
                     bloqueo = 1
                     correcto = 1
                     ocupado = 1
@@ -105,7 +105,7 @@ def decodificar():
                     return
             for line in buscarVerdes:
                 if data in line:
-                    Beep(frequencia, duracion)
+                    Beep(frecuencia, duracion)
                     print("verde")
                     bloqueo = 1
                     correcto = 1
@@ -117,7 +117,7 @@ def decodificar():
             for line in buscarCristal:
                 if data in line:
                     print("cristal")
-                    Beep(frequencia, duracion)
+                    Beep(frecuencia, duracion)
                     bloqueo = 1
                     correcto = 1
                     ocupado = 1
